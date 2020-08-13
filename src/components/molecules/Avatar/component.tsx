@@ -1,10 +1,9 @@
-import React, {} from 'react';
 import { Props } from './props';
 import styled from '@emotion/styled';
 
 export const Avatar = styled.div<Props>`
-   ${({url}) => `
-   background-image: url(${url});
+   ${({ url }) => `
+   background-image: url(${ url });
    `}
    display: flex;
    position: relative;
