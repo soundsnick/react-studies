@@ -1,6 +1,9 @@
 import React, { FC } from 'react';
 import { Container } from '../atoms/Container';
+<<<<<<< HEAD
 
+=======
+>>>>>>> bccb604... feat: add component Avatar
 
 export const About: FC = () => (
   <Container>
