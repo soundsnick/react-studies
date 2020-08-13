@@ -1,17 +1,20 @@
-import React, { FC, useCallback, useEffect, useState } from 'react';
+import React, {} from 'react';
 import { Props } from './props';
 import styled from '@emotion/styled';
 
-export const Avatar: FC<Props> = ({ url, alt, ...rest }: Props) => {
-  return(
-    <div {...rest}>
-      <img src={url} alt={alt}/>
-    </div>
-  )
-}
-
-export const AvatarStyle = styled(Avatar)`
-    padding: 0px;
-    margin: 0px;
-    border-radius: 50%;
+export const Avatar = styled.div<Props>`
+   ${({url}) => `
+   background-image: url(${url});
+   `}
+   display: flex;
+   position: relative;
+   border-radius: 100%;
+   overflow: hidden;
+   background-position: top center;
+   background-size: cover;
+   &::before {
+     content: '';
+     display: block;
+     padding-top: 100%;
+   }
 `;
