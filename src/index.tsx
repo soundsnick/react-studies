@@ -10,7 +10,8 @@ import { BrowserRouter as Router } from 'react-router-dom';
 const headerLinks = {
   'Main': '/',
   'About': '/about',
-  'Dashboard': '/dashboard'
+  'Dashboard': '/dashboard',
+  'Profile': '/profile'
 }
 
 ReactDOM.render(

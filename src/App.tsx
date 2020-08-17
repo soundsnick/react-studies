@@ -6,6 +6,7 @@ import {
 import { Main } from './components/pages/Main';
 import { About } from './components/pages/About';
 import { Dashboard } from './components/pages/Dashboard';
+import { Profile } from './components/pages/Profile';
 
 function App() {
   return (
@@ -19,6 +20,9 @@ function App() {
         </Route>
         <Route path="/dashboard">
           <Dashboard />
+        </Route>
+        <Route path="/profile">
+          <Profile />
         </Route>
       </Switch>
     </div>
