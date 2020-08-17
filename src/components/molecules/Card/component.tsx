@@ -3,8 +3,8 @@ import { Props } from './props';
 
 export const Card = styled.div<Props>`
    ${({ background, color, disableBorder}) => `
-      background-color: ${ '#fff' ||  background };
-      color: ${ '#282828' ||  color };
-      border: ${ disableBorder ? '0' : '1px solid #282828'};
+      background-color: ${ background  || '#fff' };
+      color: ${ color || '#282828' };
+      border: ${ disableBorder && 'border: 1px solid #282828;'};
    `}
 `;
