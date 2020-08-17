@@ -5,6 +5,6 @@ export const Card = styled.div<Props>`
    ${({ background, color, disableBorder}) => `
       background-color: ${ background  || '#fff' };
       color: ${ color || '#282828' };
-      border: ${ disableBorder && 'border: 1px solid #282828;'};
+      ${ disableBorder && 'border: 1px solid #282828;'};
    `}
 `;
